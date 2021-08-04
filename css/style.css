@@ -330,3 +330,30 @@ list-style: none;
 .social-link{
   text-decoration: none;
 }
+
+.catalog-first-section{
+  background: #F8F3F4;
+  height: 148px;
+}
+.new-arrivals{
+  margin-top: 60px;
+}
+.nav{
+  margin-top: 65px;
+}
+.nav-item{
+  text-decoration: none;
+font-weight: 300;
+font-size: 14px;
+line-height: 17px;
+color: #636363;
+}
+.ml{margin-left: 16px;}
+
+.Pagination{
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 96px;
+}
