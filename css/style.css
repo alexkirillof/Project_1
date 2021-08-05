@@ -1,6 +1,6 @@
 *{
   padding: 0;
-  margin: 0;
+  margin:0;
   box-sizing:border-box;
   font-family: 'Lato', sans-serif;
 }
@@ -12,6 +12,7 @@
 }
 
 .header{
+  margin: 0 auto;
   background-color: #222222;
   padding:18px 0;
 }
@@ -40,11 +41,69 @@
   text-align: center;
   line-height: 19px;
 }
+.Humburger-link{
+  list-style-type: none;
+  cursor: pointer;
+  
+}
+.Hamburger{
+position: relative;
+}
+.menu{
+  
+  height: 764px;
+  position: absolute;
+  background: #FFFFFF;
+  top:52px;
+  left:160px;
+  padding: 35px 0 35px 35px;
+}
+.close {
+  float: right;
+ font-weight: 700;
+ font-size: 15px;
+ line-height: 15px;
+  opacity: 0.6;
+  cursor: pointer;
+  margin-top: -19px;
+  margin-right: 16px;
+}
+.close:hover {
+  opacity: 1;
+}
 
+.menu-heading{
+font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+}
+.menu-names{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+  margin-top: 20px;
+}
+.menu-Items{
+  list-style: none;
+  margin-left: 20px;
+  min-width: 105px;
+  
+}
+.menu-item{
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+  margin-top: 12px;
+
+}
+.block-menu{
+  margin-right: 70px; 
+}
 .first-section{
 background-color:#F1E4E6;
 height: 764px;
-
 }
 
 .FS-Lable{
@@ -144,7 +203,37 @@ margin-bottom: 48px;
    justify-content:space-between;
    flex-wrap: wrap;
  }
-.ts-Card{margin-bottom: 30px;}
+.ts-Card{
+  margin-bottom: 30px;
+  position: relative;
+  }
+.add-cart{
+  position: absolute;
+  top:0;
+  width: 360px;
+  height: 420px;
+  background: rgba(58, 56, 56, 0.86);
+  display: none;
+  text-align: center;
+  padding: 188px 111px 0 111px;
+}
+.add-cart-link{
+display: flex;
+border: 1px solid #FFFFFF;
+align-items:center;
+min-width: 138px;
+min-height: 43px;
+padding-left: 13px;
+}
+.cart-text{
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  margin-left: 11px;
+}
+.ts-Card:hover .add-cart{
+  display: block;
+}
  .Card-description{
    margin:-3px 0;
    border:0;
@@ -291,6 +380,7 @@ color: #222224;
   padding: 16.5px 64px 16.5px 22px;
   border-width: 0;
   border-radius:25px 0 0 25px;
+  outline: none;
 }
 .Subscribe{
    background-color:#F16D7F;
