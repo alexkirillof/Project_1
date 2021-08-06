@@ -8,8 +8,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="css/style.css">
+ <link crossorigin='anonymous' href='https://use.fontawesome.com/releases/v5.8.2/css/all.css' integrity='sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay' rel='stylesheet'/>
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+     <link rel="stylesheet" href="css/style.css">
   
 </head>
 <body>
@@ -26,9 +27,45 @@
       </form>
     </div>
     <div class="d-flex align-items-center">
-<a href="Catalog.html" class="Hamburger-link">
+      <details class="Hamburger">
+        <summary class="Humburger-link">
   <img width="32" src="img/Sandwich.svg" alt="Sandwich icon" class="Sandwich-icon">
-</a>
+</summary>
+<div class="menu">
+  <span class="close">&#10006;</span>
+<h3 class="menu-heading">MENU</h3>
+<div class="block-menu">
+<h3 class="menu-names">MAN</h3>
+<ul class="menu-Items">
+  <li class="mt-2"><a class="menu-item" href="Catalog.html">Accessories</a></li>
+  <li class="mt-2"><a class="menu-item" href="Catalog.html">Bags</a></li>
+  <li class="mt-2"><a class="menu-item" href="Catalog.html">Denim</a></li>
+  <li class="mt-2"><a class="menu-item" href="Catalog.html">T-Shirts</a></li>
+</ul>
+</div>
+<div class="block-menu">
+<h3 class="menu-names">WOMAN</h3>
+<ul class="menu-Items">
+  <li class="mt-2"><a class="menu-item" href="Catalog.html">Accessories</a></li>
+  <li class="mt-2"><a class="menu-item" href="Catalog.html">Jackets & Coats</a></li>
+  <li class="mt-2"><a class="menu-item" href="Catalog.html">Polos</a></li>
+  <li class="mt-2"><a class="menu-item" href="Catalog.html">T-Shirts</a></li>
+   <li class="mt-2"><a class="menu-item" href="Catalog.html">Shirts</a></li>
+</ul>
+</div>
+<div class="block-menu">
+<h3 class="menu-names">KIDS</h3>
+<ul class="menu-Items">
+  <li class="mt-2"><a class="menu-item" href="Catalog.html">Accessories</a></li>
+  <li class="mt-2"><a class="menu-item" href="Catalog.html">Jackets & Coats</a></li>
+  <li class="mt-2"><a class="menu-item" href="Catalog.html">Polos</a></li>
+  <li class="mt-2"><a class="menu-item" href="Catalog.html">T-Shirts</a></li>
+   <li class="mt-2"><a class="menu-item" href="Catalog.html">Shirts</a></li>
+   <li class="mt-2"><a class="menu-item" href="Catalog.html">Bags</a></li>
+</ul>
+</div>
+</div>
+</details>
 <a href="#" class="login-link">
   <img width="29" src="img/Login.svg" alt="Login icon" class="Login-icon">
 </a>
@@ -42,7 +79,7 @@
  </div>
     
 </header>
-  <main>
+  
     <section class="first-section">
       <div class="container d-flex justify-content-between"> 
         <img src="img/FS-image-removebg-preview.png" alt="first section image">
@@ -53,10 +90,6 @@
                 <h2>OF LUXERIOUS <span class="anover">FASHION</span></h2>
               </div>
        </div>
-
-
-
-
 
       </div>
     </section>
@@ -92,6 +125,9 @@
       <div class="third-section-cards">
        <div class="ts-Card">
          <img width="360" src="img/ts-img-1.jpg" alt="Card-image" class="ts-Card-img">
+         <div class="add-cart">
+           <a href="#" class="add-cart-link"><img width="26" src="img/cart-link.svg" alt="cart-icon"> <span class="cart-text">Add to Cart</span></a>
+         </div>
          <div class="Card-description">
            <h4 class="ts-Card-header">ELLERY X M'O CAPSULE</h4>
            <p class="Card-description-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
@@ -100,6 +136,9 @@
        </div>
        <div class="ts-Card">  
             <img width="360" src="img/ts-img-2.jpg" alt="Card-image" class="ts-Card-img">
+            <div class="add-cart">
+           <a href="#" class="add-cart-link"><img width="26" src="img/cart-link.svg" alt="cart-icon"> <span class="cart-text">Add to Cart</span></a>
+         </div>
          <div class="Card-description">
           <h4 class="ts-Card-header">ELLERY X M'O CAPSULE</h4>
            <p class="Card-description-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
@@ -108,6 +147,9 @@
         </div>
        <div class="ts-Card">
           <img width="360" src="img/ts-img-3.jpg" alt="Card-image" class="ts-Card-img">
+          <div class="add-cart">
+           <a href="#" class="add-cart-link"><img width="26" src="img/cart-link.svg" alt="cart-icon"> <span class="cart-text">Add to Cart</span></a>
+         </div>
          <div class="Card-description">
           <h4 class="ts-Card-header">ELLERY X M'O CAPSULE</h4>
            <p class="Card-description-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
@@ -116,6 +158,9 @@
        </div>
        <div class="ts-Card">
           <img width="360" src="img/ts-img-4.jpg" alt="Card-image" class="ts-Card-img">
+          <div class="add-cart">
+           <a href="#" class="add-cart-link"><img width="26" src="img/cart-link.svg" alt="cart-icon"> <span class="cart-text">Add to Cart</span></a>
+         </div>
          <div class="Card-description">
           <h4 class="ts-Card-header">ELLERY X M'O CAPSULE</h4>
            <p class="Card-description-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
@@ -124,6 +169,9 @@
        </div>
        <div class="ts-Card">
           <img width="360" src="img/ts-img-5.jpg" alt="Card-image" class="ts-Card-img">
+          <div class="add-cart">
+           <a href="#" class="add-cart-link"><img width="26" src="img/cart-link.svg" alt="cart-icon"> <span class="cart-text">Add to Cart</span></a>
+         </div>
          <div class="Card-description">
           <h4 class="ts-Card-header">ELLERY X M'O CAPSULE</h4>
            <p class="Card-description-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
@@ -132,6 +180,9 @@
        </div>
        <div class="ts-Card">
           <img width="360" src="img/ts-img-6.jpg" alt="Card-image" class="ts-Card-img">
+          <div class="add-cart">
+           <a href="#" class="add-cart-link"><img width="26" src="img/cart-link.svg" alt="cart-icon"> <span class="cart-text">Add to Cart</span></a>
+         </div>
          <div class="Card-description">
           <h4 class="ts-Card-header">ELLERY X M'O CAPSULE</h4>
            <p class="Card-description-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
@@ -183,19 +234,21 @@
          </div>
       </div>
     </section>
-  </main>
+  
   <footer class="footer">
     <div class="container d-flex justify-content-between ">
 <p class="Rights">&#169; 2021  Brand  All Rights Reserved.</p>
 <div class="social">
 <ul class="d-flex justify-content-between">
-  <li class="social-item d-flex"><a href="" class="social-link"><img src="img/facebook.svg" alt="facebook icon" class="fb-icon"></a></li>
-  <li class="social-item d-flex"><a href="" class="social-link"><img src="img/instag.svg" alt="instagram-icon" class="inst-icon"></a></li>
- <li class="social-item d-flex"><a href="" class="social-link"><img src="img/pinterest.svg" alt="instagram-icon" class="inst-icon"></a></li>
-  <li class="social-item d-flex"><a href="" class="social-link"><img src="img/twitter.svg" alt="instagram-icon" class="inst-icon"></a></li>
+  <li class="social-item d-flex"><a href="" class="social-link"><i class="fab fa-facebook-f"></i></a></li>
+  <li class="social-item d-flex"><a href="" class="social-link"><i class="fab fa-instagram"></i></a></li>
+ <li class="social-item d-flex"><a href="" class="social-link"><i class="fab fa-pinterest-p"></i></a></li>
+  <li class="social-item d-flex"><a href="" class="social-link"><i class="fab fa-twitter"></i></a></li>
 </ul>
 </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
+
 </html>
