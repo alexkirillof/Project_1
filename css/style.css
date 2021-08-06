@@ -50,7 +50,6 @@
 position: relative;
 }
 .menu{
-  
   height: 764px;
   position: absolute;
   background: #FFFFFF;
@@ -216,6 +215,8 @@ margin-bottom: 48px;
   display: none;
   text-align: center;
   padding: 188px 111px 0 111px;
+  
+
 }
 .add-cart-link{
 display: flex;
@@ -269,16 +270,26 @@ padding-left: 13px;
    border: 1px solid #FF6A6A;
    text-align: center;
    width: 215px;
+    color: #F26376;}
    
    
- }
  .Browse-text{
  font-weight: 400;
  font-size: 16px;
  line-height: 19px;
  color: #F26376;
  text-decoration: none;
+ transition: all 1s;
  }
+
+ .Browse:hover{
+background-color: #F26376;
+
+ }
+ .Browse:hover .Browse-text{
+ color:white;
+ }
+
  .fourth-section{
    height:341px;
    background: #222224;
@@ -417,6 +428,19 @@ list-style: none;
   justify-content: center;
   align-items:center;
 }
+.social-item:hover {
+  background-color: #F16D7F;
+}
+.fa-facebook-f{color:black}
+.fa-instagram{color:black}
+.fa-pinterest-p {color:black}
+.fa-twitter {color:black}
+
+.social-item:hover .fa-instagram {color: #FFFFFF;}
+.social-item:hover .fa-facebook-f {color: #FFFFFF;}
+.social-item:hover .fa-pinterest-p {color: #FFFFFF;}
+.social-item:hover .fa-twitter {color: #FFFFFF;}
+
 .social-link{
   text-decoration: none;
 }
@@ -446,4 +470,10 @@ color: #636363;
   font-size: 14px;
   line-height: 17px;
   margin-bottom: 96px;
+}
+
+
+.cursor-item{
+  font-weight: 700;
+    color: #F16D7F;
 }
