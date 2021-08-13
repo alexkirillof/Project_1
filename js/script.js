@@ -1,16 +1,32 @@
-window.addEventListener('DOMContentLoaded', function() {
-  
-  const close = document.querySelector('.close'),
-    menu = document.querySelector('.menu'),
-    Hamburger = document.querySelector('.Humburger-link');
-  
-  close.addEventListener('click',(event)=> {
-    menu.style.cssText = 'display: none;';
-       });
+'use strict';
 
-  Hamburger.addEventListener('click', (event) => {
-    menu.style.display = 'block';
-  });
+document.addEventListener('DOMContentLoaded', () => {
+
+
+  const Hlink = document.querySelector('#Hlink'),
+    close = document.querySelector('#close'),
+    menu = document.querySelector('#Hmenu'),
+    filterClose = document.querySelector('#filter'),
+    filterMenu = document.querySelector('#menu-filter');
+    
+ 
+  Hlink.addEventListener('click', () => {
+   menu.classList.remove('hide');
+    menu.classList.add('show');
+});
+  menu.addEventListener('click', (e) => {
+    if (e.target && e.target.classList.contains('close')) {
+      menu.classList.remove('show');
+      menu.classList.add('hide');
+    }
+});
+  filterClose.addEventListener('click', () => {
+   filterMenu.remove('show');
+    filterMenu.add('hide');
+});
+  
+  
+    
   
 
 
