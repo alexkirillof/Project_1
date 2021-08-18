@@ -27,9 +27,45 @@
       </form>
     </div>
     <div class="d-flex align-items-center">
-<a href="#" class="Sandwich-link">
-  <img width="32" src="img/Sandwich.svg" alt="Sandwich icon" class="Sandwich-icon">
-</a>
+      <details class="Hamburger">
+        <summary class="Humburger-link">
+  <img width="32" src="img/Sandwich.svg" alt="Sandwich icon" class="Sandwich-icon" id="Hlink">
+</summary>
+<div class="menu" id="Hmenu">
+  <span class="close" id="close">&#10006;</span>
+<h3 class="menu-heading">MENU</h3>
+<div class="block-menu">
+<h3 class="menu-names">MAN</h3>
+<ul class="menu-Items">
+  <li class="mt-2"><a class="menu-item" href="Catalog.html">Accessories</a></li>
+  <li class="mt-2"><a class="menu-item" href="Catalog.html">Bags</a></li>
+  <li class="mt-2"><a class="menu-item" href="Catalog.html">Denim</a></li>
+  <li class="mt-2"><a class="menu-item" href="Catalog.html">T-Shirts</a></li>
+</ul>
+</div>
+<div class="block-menu">
+<h3 class="menu-names">WOMAN</h3>
+<ul class="menu-Items">
+  <li class="mt-2"><a class="menu-item" href="Catalog.html">Accessories</a></li>
+  <li class="mt-2"><a class="menu-item" href="Catalog.html">Jackets & Coats</a></li>
+  <li class="mt-2"><a class="menu-item" href="Catalog.html">Polos</a></li>
+  <li class="mt-2"><a class="menu-item" href="Catalog.html">T-Shirts</a></li>
+   <li class="mt-2"><a class="menu-item" href="Catalog.html">Shirts</a></li>
+</ul>
+</div>
+<div class="block-menu">
+<h3 class="menu-names">KIDS</h3>
+<ul class="menu-Items">
+  <li class="mt-2"><a class="menu-item" href="Catalog.html">Accessories</a></li>
+  <li class="mt-2"><a class="menu-item" href="Catalog.html">Jackets & Coats</a></li>
+  <li class="mt-2"><a class="menu-item" href="Catalog.html">Polos</a></li>
+  <li class="mt-2"><a class="menu-item" href="Catalog.html">T-Shirts</a></li>
+   <li class="mt-2"><a class="menu-item" href="Catalog.html">Shirts</a></li>
+   <li class="mt-2"><a class="menu-item" href="Catalog.html">Bags</a></li>
+</ul>
+</div>
+</div>
+      </details>
 <a href="#" class="login-link">
   <img width="29" src="img/Login.svg" alt="Login icon" class="Login-icon">
 </a>
@@ -51,8 +87,9 @@
         </div>
 
         <nav class="d-flex justify-content-between nav">
-          <a href="index.html" class="nav-item">HOME</a>
-          <a href="#" class="nav-item"> / MEN</a>
+        
+          <a href="index.html" class="nav-item" for="nv_2">HOME</a>
+          <a href="Product.html" class="nav-item"> / MEN</a>
           <a href="#" class="nav-item cursor-item"> / NEW ARRIVALS</a>
         </nav>
 
@@ -66,148 +103,299 @@
        <details>     
         <summary class="filter"><p class="filter-name">FILTER</p> </summary>
           <div class="filter-menu">
-      <p class="filter-menu-name" id="filter">FILTER</p>
-      <h3 class="filter-menu-heading select-color">CATEGORY</h3>
-      <hr class="menu-hr">
-<ul class="menu-filter-Items" >
-  <li class="mt-2"><a class="menu-item" href="Catalog.html">Accessories</a></li>
-  <li class="mt-2"><a class="menu-item" href="Catalog.html">Bags</a></li>
-  <li class="mt-2"><a class="menu-item" href="Catalog.html">Denim</a></li>
-  <li class="mt-2"><a class="menu-item" href="Catalog.html">T-Shirts</a></li>
-   <li class="mt-2"><a class="menu-item" href="Catalog.html">Accessories</a></li>
-  <li class="mt-2"><a class="menu-item" href="Catalog.html">Bags</a></li>
-  <li class="mt-2"><a class="menu-item" href="Catalog.html">Denim</a></li>
-  <li class="mt-2"><a class="menu-item" href="Catalog.html">T-Shirts</a></li>
-  <li class="mt-2"><a class="menu-item" href="Catalog.html">Accessories</a></li>
-  <li class="mt-2"><a class="menu-item" href="Catalog.html">Denim</a></li>
-    <li class="mt-2"><a class="menu-item" href="Catalog.html">Bags</a></li>
-</ul>
- <h3 class="filter-menu-heading">BRAND</h3>
-      <hr class="menu-hr">
-       <h3 class="filter-menu-heading">DESIGNER</h3>
-      <hr class="menu-hr">
+          <p class="filter-menu-name" id="filter">FILTER</p>
+            <div class="accardion-item">
+              <input class="accardion-input" type="checkbox" id="acc_1">
+              <label class="filter-menu-heading" for="acc_1">CATEGORY</label>
+              <hr class="menu-hr">
+              <div class="acc-text">
+              <ul class="menu-filter-Items" >
+                  <li class="mt-2"><a class="menu-item" href="Catalog.html">Accessories</a></li>
+                  <li class="mt-2"><a class="menu-item" href="Catalog.html">Bags</a></li>
+                  <li class="mt-2"><a class="menu-item" href="Catalog.html">Denim</a></li>
+                  <li class="mt-2"><a class="menu-item" href="Catalog.html">T-Shirts</a></li>
+                  <li class="mt-2"><a class="menu-item" href="Catalog.html">Accessories</a></li>
+                  <li class="mt-2"><a class="menu-item" href="Catalog.html">Bags</a></li>
+                  <li class="mt-2"><a class="menu-item" href="Catalog.html">Denim</a></li>
+                  <li class="mt-2"><a class="menu-item" href="Catalog.html">T-Shirts</a></li>
+                  <li class="mt-2"><a class="menu-item" href="Catalog.html">Accessories</a></li>
+                  <li class="mt-2"><a class="menu-item" href="Catalog.html">Denim</a></li>
+                    <li class="mt-2"><a class="menu-item" href="Catalog.html">Bags</a></li>
+              </ul>
+              </div>
+            </div>
+            <div class="accardion-item">
+              <input class="accardion-input" type="checkbox" id="acc_2">
+              <label class="filter-menu-heading" for="acc_2">BRAND</label>
+              <hr class="menu-hr">
+              <div class="acc-text">
+              <ul class="menu-filter-Items" >
+                  <li class="mt-2"><a class="menu-item" href="Catalog.html">Accessories</a></li>
+                  <li class="mt-2"><a class="menu-item" href="Catalog.html">Bags</a></li>
+                  <li class="mt-2"><a class="menu-item" href="Catalog.html">Denim</a></li>
+                  <li class="mt-2"><a class="menu-item" href="Catalog.html">T-Shirts</a></li>
+                  <li class="mt-2"><a class="menu-item" href="Catalog.html">Accessories</a></li>
+                  <li class="mt-2"><a class="menu-item" href="Catalog.html">Bags</a></li>
+                  <li class="mt-2"><a class="menu-item" href="Catalog.html">Denim</a></li>
+                  <li class="mt-2"><a class="menu-item" href="Catalog.html">T-Shirts</a></li>
+                  <li class="mt-2"><a class="menu-item" href="Catalog.html">Accessories</a></li>
+                  <li class="mt-2"><a class="menu-item" href="Catalog.html">Denim</a></li>
+                    <li class="mt-2"><a class="menu-item" href="Catalog.html">Bags</a></li>
+              </ul>
+              </div>
+            </div>
+            <div class="accardion-item">
+              <input class="accardion-input" type="checkbox" id="acc_3">
+              <label class="filter-menu-heading" for="acc_3">DESIGNER</label>
+              <hr class="menu-hr">
+              <div class="acc-text">
+              <ul class="menu-filter-Items" >
+                  <li class="mt-2"><a class="menu-item" href="Catalog.html">Accessories</a></li>
+                  <li class="mt-2"><a class="menu-item" href="Catalog.html">Bags</a></li>
+                  <li class="mt-2"><a class="menu-item" href="Catalog.html">Denim</a></li>
+                  <li class="mt-2"><a class="menu-item" href="Catalog.html">T-Shirts</a></li>
+                  <li class="mt-2"><a class="menu-item" href="Catalog.html">Accessories</a></li>
+                  <li class="mt-2"><a class="menu-item" href="Catalog.html">Bags</a></li>
+                  <li class="mt-2"><a class="menu-item" href="Catalog.html">Denim</a></li>
+                  <li class="mt-2"><a class="menu-item" href="Catalog.html">T-Shirts</a></li>
+                  <li class="mt-2"><a class="menu-item" href="Catalog.html">Accessories</a></li>
+                  <li class="mt-2"><a class="menu-item" href="Catalog.html">Denim</a></li>
+                    <li class="mt-2"><a class="menu-item" href="Catalog.html">Bags</a></li>
+              </ul>
+              </div>
+            </div>
           </div>
       </details>
 
       <div class="filter-nav d-flex justify-content-between">
           <details>     
         <summary class="filter"><p class="filter-nav-name">TRENDING NOW</p> </summary>
-          <div class="filter-nav-menu">
-      
+          <div class="filter-nav-menu trend-menu">
+          <div class="filter-input">
+           <label class="custom-radio">
+              <input type="radio" name="gender" class="visually-hidden" >
+              <span>TREND1</span>
+            </label>
+            <label class="custom-radio">
+              <input type="radio" name="gender" class="visually-hidden" >
+              <span>TREND2</span>
+            </label>
+            <label class="custom-radio">
+              <input type="radio" name="gender" class="visually-hidden" >
+              <span>TREND3</span>
+            </label>
+           </div>
           </div>
-      </details>
-      <details>     
+          </details>
+          <details>     
         <summary class="filter"><p class="filter-nav-name">SIZE </p> </summary>
           <div class="filter-nav-menu">
-            
-          <label class="checkbox_container">
-            XS
-            <input type="checkbox" checked="">
-            <span class="checkbox_mark"></span>
-        </label>
-
-        <label class="checkbox_container">
-            S
-            <input type="checkbox" checked="">
-            <span class="checkbox_mark"></span>
-        </label>
-
-        <label class="checkbox_container">
-            M
-            <input type="checkbox" checked="">
-            <span class="checkbox_mark"></span>
-        </label>
-         <label class="checkbox_container">
-            L
-            <input type="checkbox" checked="">
-            <span class="checkbox_mark"></span>
-        </label>
-      
+            <div class="filter-input">
+           <label class="custom-radio">
+              <input type="radio" name="gender" class="visually-hidden" >
+              <span>XS</span>
+            </label>
+            <label class="custom-radio">
+              <input type="radio" name="gender" class="visually-hidden" >
+              <span>S</span>
+            </label>
+            <label class="custom-radio">
+              <input type="radio" name="gender" class="visually-hidden" >
+              <span>M</span>
+            </label>
+            <label class="custom-radio">
+              <input type="radio" name="gender" class="visually-hidden" >
+              <span>L</span>
+            </label>
+            </div>
           </div>
-      </details>
-       <details>     
+          </details>
+           <details>     
         <summary class="filter"><p class="filter-nav-name">PRICE</p> </summary>
-          <div class="filter-nav-menu">
-      
+          <div class="filter-nav-menu price-menu">
+          <div class="filter-input">
+           <label class="custom-radio">
+              <input type="radio" name="gender" class="visually-hidden" >
+              <span>LOW</span>
+            </label>
+            <label class="custom-radio">
+              <input type="radio" name="gender" class="visually-hidden" >
+              <span>MIDDLE</span>
+            </label>
+            <label class="custom-radio">
+              <input type="radio" name="gender" class="visually-hidden" >
+              <span>HIGH</span>
+            </label>
+           </div>
           </div>
-      </details>
+          </details>
 
       </div>
       </div>
 
       <div class="third-section-cards">
-       <a class="ts-Card" href="Product.html">
-         <img width="360" src="img/ts-img-1.jpg" alt="Card-image" class="ts-Card-img">
-         <div class="Card-description">
-           <h4 class="ts-Card-header">ELLERY X M'O CAPSULE</h4>
-           <p class="Card-description-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-           <span class="card-price">$52.00</span>
-         </div>
-        </a>
-        <a class="ts-Card" href="Product.html">
-            <img width="360" src="img/ts-img-7.jpg" alt="Card-image" class="ts-Card-img">
-         <div class="Card-description">
-          <h4 class="ts-Card-header">ELLERY X M'O CAPSULE</h4>
-           <p class="Card-description-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-           <span class="card-price">$52.00</span>
-         </div>
-        </a>
-        <a class="ts-Card" href="Product.html">
-          <img width="360" src="img/ts-img-3.jpg" alt="Card-image" class="ts-Card-img">
-         <div class="Card-description">
-          <h4 class="ts-Card-header">ELLERY X M'O CAPSULE</h4>
-           <p class="Card-description-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-           <span class="card-price">$52.00</span>
-         </div>
-        </a>
-        <a class="ts-Card" href="Product.html">
-          <img width="360" src="img/ts-img-4.jpg" alt="Card-image" class="ts-Card-img">
-         <div class="Card-description">
-          <h4 class="ts-Card-header">ELLERY X M'O CAPSULE</h4>
-           <p class="Card-description-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-           <span class="card-price">$52.00</span>
-       </div>
-        </a>
-        <a class="ts-Card" href="Product.html">
-          <img width="360" src="img/ts-img-8.jpg" alt="Card-image" class="ts-Card-img">
-         <div class="Card-description">
-          <h4 class="ts-Card-header">ELLERY X M'O CAPSULE</h4>
-           <p class="Card-description-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-           <span class="card-price">$52.00</span>
-          </div>
-        </a>
-        <a class="ts-Card" href="Product.html">
-          <img width="360" src="img/ts-img-9.jpg" alt="Card-image" class="ts-Card-img">
-         <div class="Card-description">
-          <h4 class="ts-Card-header">ELLERY X M'O CAPSULE</h4>
-           <p class="Card-description-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-           <span class="card-price">$52.00</span>
-         </div>
-        </a>
-         <a class="ts-Card" href="Product.html">
-          <img width="360" src="img/ts-img-10.jpg" alt="Card-image" class="ts-Card-img">
-         <div class="Card-description">
-          <h4 class="ts-Card-header">ELLERY X M'O CAPSULE</h4>
-           <p class="Card-description-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-           <span class="card-price">$52.00</span>
-         </div>
-         </a>
-         <a class="ts-Card" href="Product.html">
-          <img width="360" src="img/ts-img-11.jpg" alt="Card-image" class="ts-Card-img">
-         <div class="Card-description">
-          <h4 class="ts-Card-header">ELLERY X M'O CAPSULE</h4>
-           <p class="Card-description-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-           <span class="card-price">$52.00</span>
-         </div>
-        </a>
-         <a class="ts-Card" href="Product.html">
-          <img width="360" src="img/ts-img-12.jpg" alt="Card-image" class="ts-Card-img">
-         <div class="Card-description">
-          <h4 class="ts-Card-header">ELLERY X M'O CAPSULE</h4>
-           <p class="Card-description-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-           <span class="card-price">$52.00</span>
-         </div>
-         </a>
+            <div class="item-box">
+           <div class="item">
+             <a class="item-link" href="Product.html">
+                  <img width="360" src="img/ts-img-1.jpg" alt="Card-image" class="ts-Card-img">
+                  <div class="Card-description">
+                  <h4 class="ts-Card-header">ELLERY X M'O CAPSULE</h4>
+                  <p class="Card-description-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                  <span class="card-price">$52.00</span> 
+                  </div>
+             </a>
+              <div class="add-cart">
+               <a href="#" class="add-cart-link">
+                <img width="26" src="img/cart-link.svg" alt="cart-icon"> 
+                <span class="cart-text">Add to Cart</span></a>
+              </div>
+             
+           </div>
+            </div>
+            <div class="item-box">
+           <div class="item">
+             <a class="item-link" href="Product.html">
+                  <img width="360" src="img/ts-img-1.jpg" alt="Card-image" class="ts-Card-img">
+                  <div class="Card-description">
+                  <h4 class="ts-Card-header">ELLERY X M'O CAPSULE</h4>
+                  <p class="Card-description-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                  <span class="card-price">$52.00</span> 
+                  </div>
+             </a>
+              <div class="add-cart">
+               <a href="#" class="add-cart-link">
+                <img width="26" src="img/cart-link.svg" alt="cart-icon"> 
+                <span class="cart-text">Add to Cart</span></a>
+              </div>
+             
+           </div>
+            </div>
+             <div class="item-box">
+           <div class="item">
+             <a class="item-link" href="Product.html">
+                  <img width="360" src="img/ts-img-1.jpg" alt="Card-image" class="ts-Card-img">
+                  <div class="Card-description">
+                  <h4 class="ts-Card-header">ELLERY X M'O CAPSULE</h4>
+                  <p class="Card-description-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                  <span class="card-price">$52.00</span> 
+                  </div>
+             </a>
+              <div class="add-cart">
+               <a href="#" class="add-cart-link">
+                <img width="26" src="img/cart-link.svg" alt="cart-icon"> 
+                <span class="cart-text">Add to Cart</span></a>
+              </div>
+             
+           </div>
+            </div>
+            <div class="item-box">
+           <div class="item">
+             <a class="item-link" href="Product.html">
+                  <img width="360" src="img/ts-img-1.jpg" alt="Card-image" class="ts-Card-img">
+                  <div class="Card-description">
+                  <h4 class="ts-Card-header">ELLERY X M'O CAPSULE</h4>
+                  <p class="Card-description-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                  <span class="card-price">$52.00</span> 
+                  </div>
+             </a>
+              <div class="add-cart">
+               <a href="#" class="add-cart-link">
+                <img width="26" src="img/cart-link.svg" alt="cart-icon"> 
+                <span class="cart-text">Add to Cart</span></a>
+              </div>
+             
+           </div>
+            </div>
+             <div class="item-box">
+           <div class="item">
+             <a class="item-link" href="Product.html">
+                  <img width="360" src="img/ts-img-1.jpg" alt="Card-image" class="ts-Card-img">
+                  <div class="Card-description">
+                  <h4 class="ts-Card-header">ELLERY X M'O CAPSULE</h4>
+                  <p class="Card-description-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                  <span class="card-price">$52.00</span> 
+                  </div>
+             </a>
+              <div class="add-cart">
+               <a href="#" class="add-cart-link">
+                <img width="26" src="img/cart-link.svg" alt="cart-icon"> 
+                <span class="cart-text">Add to Cart</span></a>
+              </div>
+             
+           </div>
+            </div>
+            <div class="item-box">
+           <div class="item">
+             <a class="item-link" href="Product.html">
+                  <img width="360" src="img/ts-img-1.jpg" alt="Card-image" class="ts-Card-img">
+                  <div class="Card-description">
+                  <h4 class="ts-Card-header">ELLERY X M'O CAPSULE</h4>
+                  <p class="Card-description-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                  <span class="card-price">$52.00</span> 
+                  </div>
+             </a>
+              <div class="add-cart">
+               <a href="#" class="add-cart-link">
+                <img width="26" src="img/cart-link.svg" alt="cart-icon"> 
+                <span class="cart-text">Add to Cart</span></a>
+              </div>
+             
+           </div>
+            </div>
+             <div class="item-box">
+           <div class="item">
+             <a class="item-link" href="Product.html">
+                  <img width="360" src="img/ts-img-1.jpg" alt="Card-image" class="ts-Card-img">
+                  <div class="Card-description">
+                  <h4 class="ts-Card-header">ELLERY X M'O CAPSULE</h4>
+                  <p class="Card-description-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                  <span class="card-price">$52.00</span> 
+                  </div>
+             </a>
+              <div class="add-cart">
+               <a href="#" class="add-cart-link">
+                <img width="26" src="img/cart-link.svg" alt="cart-icon"> 
+                <span class="cart-text">Add to Cart</span></a>
+              </div>
+             
+           </div>
+            </div>
+            <div class="item-box">
+           <div class="item">
+             <a class="item-link" href="Product.html">
+                  <img width="360" src="img/ts-img-1.jpg" alt="Card-image" class="ts-Card-img">
+                  <div class="Card-description">
+                  <h4 class="ts-Card-header">ELLERY X M'O CAPSULE</h4>
+                  <p class="Card-description-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                  <span class="card-price">$52.00</span> 
+                  </div>
+             </a>
+              <div class="add-cart">
+               <a href="#" class="add-cart-link">
+                <img width="26" src="img/cart-link.svg" alt="cart-icon"> 
+                <span class="cart-text">Add to Cart</span></a>
+              </div>
+             
+           </div>
+            </div>
+                <div class="item-box">
+           <div class="item">
+             <a class="item-link" href="Product.html">
+                  <img width="360" src="img/ts-img-1.jpg" alt="Card-image" class="ts-Card-img">
+                  <div class="Card-description">
+                  <h4 class="ts-Card-header">ELLERY X M'O CAPSULE</h4>
+                  <p class="Card-description-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                  <span class="card-price">$52.00</span> 
+                  </div>
+             </a>
+              <div class="add-cart">
+               <a href="#" class="add-cart-link">
+                <img width="26" src="img/cart-link.svg" alt="cart-icon"> 
+                <span class="cart-text">Add to Cart</span></a>
+              </div>
+             
+           </div>
+            </div>
       </div>
 
       <div class="Pagination"> 
