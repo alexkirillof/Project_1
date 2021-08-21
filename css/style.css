@@ -83,6 +83,7 @@
 
 .close:hover {
   opacity: 1;
+  color: #F16D7F;
 }
 
 .menu-heading {
@@ -972,6 +973,7 @@
   min-height: 998px;
   padding-top: 56px;
   padding-bottom: 128px;
+  box-sizing: border-box;
 }
 
 .carts .left-cart-block {
@@ -984,6 +986,10 @@
   margin-top: 40px;
   padding: 0;
   border: none;
+  cursor: pointer;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  -webkit-transition: all 1s ease-out;
 }
 
 .carts .left-cart-block .cart .cart-image {
@@ -1037,5 +1043,86 @@
   font-size: 18px;
   line-height: 22px;
   color: #6F6E6E;
+  outline: none;
+}
+
+.carts .left-cart-block .cart:hover {
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -o-transform: scale(1.02);
+}
+
+.carts .left-cart-block .clb-bottons {
+  margin-top: 72px;
+}
+
+.carts .left-cart-block .clb-botton {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  border: 1px solid #A4A4A4;
+  text-decoration: none;
+  color: #222222;
+  padding: 16px 40px;
+  background-color: #FFFFFF;
+}
+
+.carts .left-cart-block .clb-botton:hover {
+  border: 1px solid #F16D7F;
+  color: #F16D7F;
+}
+
+.carts .right-cart-block {
+  max-width: 32%;
+  margin-top: 57px;
+}
+
+.carts .right-cart-block .rcb-form {
+  width: 100%;
+}
+
+.carts .right-cart-block .rcb-form .form-heading {
+  float: left;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.carts .right-cart-block .rcb-form .country {
+  margin-top: 20px;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  padding: 14px 16px;
+  border: 1px solid #A4A4A4;
+  width: 100%;
+  outline: none;
+}
+
+.carts .right-cart-block .rcb-form .state::placeholder {
+  color: #222222;
+}
+
+.carts .right-cart-block .rcb-form .get-button {
+  padding: 10px 14px;
+  width: 100px;
+  color: #6F6E6E;
+  background-color: #FFFFFF;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+}
+
+.carts .right-cart-block .rcb-form .get-button:hover {
+  border: 1px solid #F16D7F;
+  color: #F16D7F;
+}
+
+.carts .right-cart-block .total {
+  margin-top: 57px;
+  width: 100%;
+  min-height: 214px;
+  background-color: #F5F3F3;
+  padding: 40px 34px;
 }
 /*# sourceMappingURL=style.css.map */
