@@ -70,12 +70,12 @@ $gray: #6F6E6E
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
 
 .close
-  float: right
+  position: absolute
   @include fonts(700,15px,15px)
   opacity: 0.6
   cursor: pointer
-  margin-top: -19px
-  margin-right: 16px
+  top: 19px
+  right: 19px
 
   &:hover
     opacity: 1
@@ -807,8 +807,50 @@ $gray: #6F6E6E
 .add-cart-sl:hover .sl-cart-text::before
   content: url(../img/cart-link.svg)
 
-.hide
-  display: none
+.carts
+  min-height: 998px
+  padding-top: 56px
+  padding-bottom: 128px
+  .left-cart-block
+    max-width: 57%
+    .cart
+      box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13)
+      height: 306px
+      margin-top: 40px
+      padding: 0
+      border: none
+      .cart-image
+        height: 100%
+        width: 262px
+      .cart-info
+        position: relative
+        padding: 22px 22px 0 31px
+        height: 100%
+        min-width: 390px
+        .cart-info-heading
+          @include fonts(400,24px,29px)
+          width: 60%
+          margin-bottom: 42px
+        .cart-info-items
+          @include fonts(400,22px,26px)
+          color: #575757
+        .cii-price
+          color: $pink
+        .quantity
+          width: 200px
+          .qua-lable
+            @include fonts(400,22px,26px)
+            color: #575757
+          .qty
+            margin-left: 24px
+            border: 1px solid #EAEAEA
+            width: 43px
+            text-align: center
+            @include fonts(400,18px,22px)
+            color: $gray
 
-.show
-  display: block
+// .hide
+//   display: none
+
+// .show
+//   display: block
