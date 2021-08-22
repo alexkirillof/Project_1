@@ -822,9 +822,9 @@ $gray: #6F6E6E
       padding: 0
       border: none
       cursor: pointer
-      -moz-transition: all 1s ease-out
-      -o-transition: all 1s ease-out
-      -webkit-transition: all 1s ease-out
+      -moz-transition: all 0.8s
+      -o-transition: all 0.8s
+      -webkit-transition: all 0.8s
       .cart-image
         height: 100%
         width: 262px
@@ -906,8 +906,43 @@ $gray: #6F6E6E
       min-height: 214px
       background-color: #F5F3F3
       padding: 40px 34px
+      box-sizing: border-box
+      text-align: center
+      h4
+        float: right
+        margin-bottom: 18px
+        @include fonts(400,11px,13px)
+        color: #4A4A4A
+        span
+          margin-left: 25px
+      h3
+        float: right
+        clear: both
+        @include fonts(300,16px,19px)
+        color: $dark
+        margin-bottom: 21px
+        span
+          margin-left: 25px
+          color: $pink
+          font-weight: 700
+      hr
+        margin: 0 auto
+        background: #ccc9c9
+        clear: both
+        margin-bottom: 17px
+      .total-btn
+        color: $white
+        background-color: $pink
+        padding: 15px 42px
+        @include fonts(300,16px,19px)
+        border: none
+        transition: color 0.7s
+        transition: background-color 0.7s
+      .total-btn:hover
+        color: $pink
+        background-color: $white
 
-// .hide
+  // .hide
 //   display: none
 
 // .show

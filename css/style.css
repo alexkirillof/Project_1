@@ -987,9 +987,9 @@
   padding: 0;
   border: none;
   cursor: pointer;
-  -moz-transition: all 1s ease-out;
-  -o-transition: all 1s ease-out;
-  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -webkit-transition: all 0.8s;
 }
 
 .carts .left-cart-block .cart .cart-image {
@@ -1124,5 +1124,60 @@
   min-height: 214px;
   background-color: #F5F3F3;
   padding: 40px 34px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.carts .right-cart-block .total h4 {
+  float: right;
+  margin-bottom: 18px;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+}
+
+.carts .right-cart-block .total h4 span {
+  margin-left: 25px;
+}
+
+.carts .right-cart-block .total h3 {
+  float: right;
+  clear: both;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  margin-bottom: 21px;
+}
+
+.carts .right-cart-block .total h3 span {
+  margin-left: 25px;
+  color: #F16D7F;
+  font-weight: 700;
+}
+
+.carts .right-cart-block .total hr {
+  margin: 0 auto;
+  background: #ccc9c9;
+  clear: both;
+  margin-bottom: 17px;
+}
+
+.carts .right-cart-block .total .total-btn {
+  color: #FFFFFF;
+  background-color: #F16D7F;
+  padding: 15px 42px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  border: none;
+  transition: color 0.7s;
+  transition: background-color 0.7s;
+}
+
+.carts .right-cart-block .total .total-btn:hover {
+  color: #F16D7F;
+  background-color: #FFFFFF;
 }
 /*# sourceMappingURL=style.css.map */
