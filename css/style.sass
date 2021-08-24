@@ -98,6 +98,7 @@ $gray: #6F6E6E
   text-decoration: none
   color: $gray
   margin-top: 12px
+  transition: color 1s ease-out
 
   &:hover
     color: $pink
@@ -158,9 +159,9 @@ $gray: #6F6E6E
   padding: 65px
   display: block
   text-decoration: none
-  -moz-transition: all 0.5s ease-out
-  -o-transition: all 0.5s ease-out
-  -webkit-transition: all 0.5s ease-out
+  -moz-transition: all 1s ease-out
+  -o-transition: all 1s ease-out
+  -webkit-transition: all 1s ease-out
 
   &:hover
     -webkit-transform: scale(1.02)
@@ -431,6 +432,7 @@ $gray: #6F6E6E
   height: 32px
   justify-content: center
   align-items: center
+  transition: all 1s ease-out
 .social-item:hover
   background-color: $pink
 
@@ -456,6 +458,7 @@ $gray: #6F6E6E
     font-size: 14px
     line-height: 17px
     color: $gray
+    transition: color 1s ease-out
 
   &-item:hover
     color: $pink
@@ -559,19 +562,22 @@ $gray: #6F6E6E
   list-style: none
   padding-left: 15px
   margin-bottom: 18px
-
-  & li a
-    font-size: 14px
-    line-height: 17px
+  .menu-item
+    @include fonts(400,14px,17px)
     color: $gray
-    font-weight: 400
+    text-decoration: none
+    width: 100%
+    display: block
+    transition: color 1s ease-out
+  .menu-item:hover
+    color: $pink
 
 .filter-menu-heading
   display: block
   position: relative
   cursor: pointer
   color: $gray
-  transition: color .2s ease-out
+  transition: color 1s ease-out
 
   &:hover
     color: $pink
@@ -676,6 +682,7 @@ $gray: #6F6E6E
     width: 46px
     border: 0
     text-align: center
+    transition: all 1s ease-out
 
   &-arrow span
     font-weight: 700
@@ -822,9 +829,9 @@ $gray: #6F6E6E
       padding: 0
       border: none
       cursor: pointer
-      -moz-transition: all 0.8s
-      -o-transition: all 0.8s
-      -webkit-transition: all 0.8s
+      -moz-transition: all 1s
+      -o-transition: all 1s
+      -webkit-transition: all 1s
       .cart-image
         height: 100%
         width: 262px
@@ -869,6 +876,7 @@ $gray: #6F6E6E
       color: $dark
       padding: 16px 40px
       background-color: $white
+      transition: all 1s ease-out
     .clb-botton:hover
       border: 1px solid $pink
       color: $pink
@@ -897,6 +905,7 @@ $gray: #6F6E6E
         color: $gray
         background-color: $white
         @include fonts(300,11px,13px)
+        transition: all 1s ease-out
       .get-button:hover
         border: 1px solid $pink
         color: $pink
@@ -942,8 +951,103 @@ $gray: #6F6E6E
         color: $pink
         background-color: $white
 
-  // .hide
-//   display: none
+.registration
+  min-height: 675px
+  padding-top: 64px
+  padding-bottom: 96px
+  box-sizing: border-box
+  .form-block
+    max-width: 32%
+    .form-heading
+      float: left
+      @include fonts(300,16px,19px)
+    .input-place
+      margin-top: 20px
+      @include fonts(300,13px,16px)
+      padding: 14px 16px
+      border: 1px solid #A4A4A4
+      width: 100%
+      outline: none
+    #male-form
+      margin-top: 30px
+      height: 22px
+      width: 22px
+      -webkit-appearance: none
+      -moz-appearance: none
+      appearance: none
+      outline: none
+      position: relative
+    #male-form::before
+      content: ''
+      position: absolute
+      top: 72%
+      left: 30%
+      width: 17px
+      height: 17px
+      border-radius: 50%
+      transform: translate(-50%, -50%)
+      background-color: white
+      border: 1px solid $gray
+    #male-form::before:hover
+      border: 1px solid $pink
+    #male-form:checked::after
+      content: ''
+      position: absolute
+      top: 72%
+      left: 30%
+      width: 10px
+      height: 10px
+      border-radius: 50%
+      background-color: $pink
+      transform: translate(-50%, -50%)
+      visibility: visible
 
-// .show
-//   display: block
+    .mf-lable
+      cursor: pointer
+      @include fonts(300,11px,13px)
+      color: $dark
+      margin-right: 20px
+    .pass-desc
+      margin-top: 15px
+      width: 100%
+      min-height: 32px
+      @include fonts(300,13px,16px)
+      color: $gray
+      margin-bottom: 40px
+    .send-form
+      color: $white
+      background-color: $pink
+      padding: 15px 42px
+      @include fonts(300,16px,19px)
+      border: 1px solid transparent
+      transition: all 1s ease-out
+
+    .send-form:hover
+      color: $pink
+      border: 1px solid $pink
+      background-color: $white
+
+.right-form-block
+  width: 57%
+  .rfb-heading
+    margin: bottom 22px
+    @include fonts(300,24px,29px)
+  p
+    @include fonts(300,24px,29px)
+    margin: bottom 22px
+
+  ul
+    list-style-type: none
+    padding-left: 0
+  li
+    @include fonts(300,24px,29px)
+    margin-bottom: 16px
+  li:before
+    content: "\2713"
+    margin-right: 22px
+
+.hide
+  display: none
+
+.show
+  display: block

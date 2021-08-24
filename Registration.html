@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cart</title>
+  <title>Registration</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
@@ -66,7 +66,7 @@
 </div>
 </div>
       </details>
-<a href="Registration.html" class="login-link">
+<a href="#" class="login-link">
   <img width="29" src="img/Login.svg" alt="Login icon" class="Login-icon">
 </a>
 <a href="#" class="Cart-link">
@@ -83,68 +83,43 @@
     <section class="catalog-first-section">
       <div class="container d-flex justify-content-between align-irtems-center"> 
         <div class="new-arrivals">
-        <h2 class="bottom-lable">SHOPPING CART </h2>
+        <h2 class="bottom-lable">REGISTRATION</h2>
         </div>
       </div>
     </section>
-<section class="carts"> 
+<section class="registration"> 
   <div class="container d-flex justify-content-between">
-<div class="left-cart-block">
-<div class="cart d-flex">
-  <a href="Product.html">
-  <img src="img/cart_img.jpg" alt="cart-image" class="cart-image"></a>
-  <div class="cart-info">
-    <h2 class="cart-info-heading">MANGO  PEOPLE  T-SHIRT</h2>
-    <span class="close" id="close">&#10006;</span>
-    <p class="cart-info-items">Price:<span class="cii-price">$300</span></p>
-    <p class="cart-info-items">Color: Red</p>
-    <p class="cart-info-items">Size: Xl	</p>
-    <form id='myform' method='POST' class='quantity d-flex' action='#'>
-     <label class="qua-lable" for="myform">Quantity:	</label>
-     <input type="number" name='quantity' value='2' class='qty' min="1" />
-  
-     </form>
-    
-  </div>
-</div>
-<div class="cart d-flex">
-  <a href="Product.html">
-  <img src="img/cart_img.jpg" alt="cart-image" class="cart-image"></a>
-  <div class="cart-info">
-    <h2 class="cart-info-heading">MANGO  PEOPLE  T-SHIRT</h2>
-    <span class="close" id="close">&#10006;</span>
-    <p class="cart-info-items">Price:<span class="cii-price">$300</span></p>
-    <p class="cart-info-items">Color: Red</p>
-    <p class="cart-info-items">Size: Xl	</p>
-    <form id='myform' method='POST' class='quantity d-flex' action='#'>
-     <label class="qua-lable" for="myform">Quantity:	</label>
-     <input type="number" name='quantity' value='2' class='qty' min="1" />
-  
-     </form>
-    
-  </div>
-</div>
-<div class="clb-bottons d-flex justify-content-between"><a class="clb-botton" href="#">CLEAR SHOPPING CART</a><a class="clb-botton" href="Product.html">CONTINUE SHOPPING</a></div>
-</div>
+       <div class="form-block">
+       <form action="#">
+          <legend class="form-heading">Your Name</legend>
+          <input id="name" placeholder="First Name" autofocus="" required="" pattern="\S+[А-яа-я]" class="input-place">
+              <input id="name" placeholder="Last Name" autofocus="" required="" pattern="\S+[А-яа-я]" class="input-place">
+          <input id="male-form" type="radio" name="male">
+          <label class="mf-lable" for="male-form" >Male</label>
+          <input id="male-form" type="radio" name="male">
+          <label class="mf-lable" for="male-form">Female</label>
+          <legend class="form-heading mt-4">Login details</legend>
+           <input id="Email" placeholder="Email" required="" pattern="\S+@[a-z]+.[a-z]+" class="input-place">
+           <input id="pass" type="password" maxlength="25" size="40" name="password" id="name" placeholder="Password" class="input-place"> 
+           <label for="pass" class="pass-desc">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</label>
+           <input class="send-form" type="submit" value="JOIN NOW  	
+&#8594;">
+       </form>
+       
+    </div>
 
-<div class="right-cart-block">
-  <form class="rcb-form" action="#">
-  <legend class="form-heading">SHIPPING ADRESS</legend>
-  <input class="country" id="country" placeholder="Bangladesh">
-  <input class="country state" id="state" placeholder="State">
-  <input class="country state" id="addres" placeholder="Postcode / Zip">
-  <input class="country get-button" type="submit" value="GET A QUOTE">
-  </form>
+        <div class="right-form-block">
+       <h3 class="rfb-heading">LOYALTY HAS ITS PERKS</h3>
+       <p>Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
+       <ul>
+         <li>15% off welcome offer</li>
+         <li>Free shipping, returns and exchanges on all orders</li>
+         <li>$10 off a purchase on your birthday</li>
+         <li>Early access to products</li>
+         <li> Exclusive offers & rewards</li>
+       </ul>
 
-  <div class="total">
-    <h4>SUB TOTAL<span>$900</span></h4>
-    <!-- <div style="clear: left"></div> -->
-    <h3>GRAND TOTAL<span>$900</span></h3>
-    <hr>
-    <button class="total-btn">PROCEED TO CHECKOUT</button>
-  </div>
-
-</div>
+        </div>
 
 
 
