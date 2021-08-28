@@ -165,7 +165,7 @@
 .top-img-item {
   background-blend-mode: multiply;
   text-align: center;
-  width: 360px;
+  width: 31.5%;
   height: 260px;
   padding: 103px;
   text-decoration: none;
@@ -201,18 +201,27 @@
 
 .tii-first {
   background: url(../img/Picture_1.jpg) rgba(0, 0, 0, 0.6);
+  background-size: 100% 100%;
+  background-position: center;
+  background-size: contain;
 }
 
 .tii-second {
   background: url(../img/Picture_2.jpg) rgba(0, 0, 0, 0.6);
+  background-size: contain;
+  background-position: center;
 }
 
 .tii-third {
   background: url(../img/Picture_3.jpg) rgba(0, 0, 0, 0.6);
+  background-size: contain;
+  background-position: center;
 }
 
 .tii-fourth {
   background: url(../img/Picture_4.jpg) rgba(0, 0, 0, 0.6);
+  background-size: 100% 100%;
+  background-position: center;
 }
 
 .top-lable {
@@ -264,7 +273,7 @@
 }
 
 .item-box .item {
-  width: 360px;
+  width: 100%;
   position: relative;
   -moz-transition: all 1s ease-out;
   -o-transition: all 1s ease-out;
@@ -414,7 +423,7 @@
   max-width: 360px;
 }
 
-.five-section {
+.top-footer-block {
   background: url(../img/Five-image.jpg);
   background-size: 100% 100%;
   background-position: center;
@@ -498,7 +507,7 @@
   cursor: pointer;
 }
 
-.footer {
+.footer-bottom {
   background: #222222;
   height: 80px;
   padding: 30px 0;
