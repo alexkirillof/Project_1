@@ -70,15 +70,16 @@ $gray: #6F6E6E
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
 
 .close
-  float: right
+  position: absolute
   @include fonts(700,15px,15px)
   opacity: 0.6
   cursor: pointer
-  margin-top: -19px
-  margin-right: 16px
+  top: 19px
+  right: 19px
 
   &:hover
     opacity: 1
+    color: $pink
 
 .menu-heading
   @include fonts(700,14px,17px)
@@ -97,6 +98,7 @@ $gray: #6F6E6E
   text-decoration: none
   color: $gray
   margin-top: 12px
+  transition: color 1s ease-out
 
   &:hover
     color: $pink
@@ -136,7 +138,7 @@ $gray: #6F6E6E
   &-item
     background-blend-mode: multiply
     text-align: center
-    width: 360px
+    width: 31.5%
     height: 260px
     padding: 103px
     text-decoration: none
@@ -157,9 +159,9 @@ $gray: #6F6E6E
   padding: 65px
   display: block
   text-decoration: none
-  -moz-transition: all 0.5s ease-out
-  -o-transition: all 0.5s ease-out
-  -webkit-transition: all 0.5s ease-out
+  -moz-transition: all 1s ease-out
+  -o-transition: all 1s ease-out
+  -webkit-transition: all 1s ease-out
 
   &:hover
     -webkit-transform: scale(1.02)
@@ -168,15 +170,24 @@ $gray: #6F6E6E
 
 .tii-first
   background: url(../img/Picture_1.jpg) rgba(0, 0, 0, 0.6)
+  background-size: 100% 100%
+  background-position: center
+  background-size: contain
 
 .tii-second
   background: url(../img/Picture_2.jpg) rgba(0, 0, 0, 0.6)
+  background-size: contain
+  background-position: center
 
 .tii-third
   background: url(../img/Picture_3.jpg) rgba(0, 0, 0, 0.6)
+  background-size: contain
+  background-position: center
 
 .tii-fourth
   background: url(../img/Picture_4.jpg) rgba(0, 0, 0, 0.6)
+  background-size: 100% 100%
+  background-position: center
 
 .top-lable
   @include fonts(400,16px,19px)
@@ -214,7 +225,7 @@ $gray: #6F6E6E
   margin-bottom: 30px
 
   .item
-    width: 360px
+    width: 100%
     position: relative
     -moz-transition: all 1s ease-out
     -o-transition: all 1s ease-out
@@ -338,7 +349,7 @@ $gray: #6F6E6E
     color: #FBFBFB
     max-width: 360px
 
-.five-section
+.top-footer-block
   background: url(../img/Five-image.jpg)
   background-size: 100% 100%
   background-position: center
@@ -408,7 +419,7 @@ $gray: #6F6E6E
   margin-left: -4px
   cursor: pointer
 
-.footer
+.footer-bottom
   background: $dark
   height: 80px
   padding: 30px 0
@@ -430,6 +441,7 @@ $gray: #6F6E6E
   height: 32px
   justify-content: center
   align-items: center
+  transition: all 1s ease-out
 .social-item:hover
   background-color: $pink
 
@@ -455,6 +467,7 @@ $gray: #6F6E6E
     font-size: 14px
     line-height: 17px
     color: $gray
+    transition: color 1s ease-out
 
   &-item:hover
     color: $pink
@@ -558,19 +571,22 @@ $gray: #6F6E6E
   list-style: none
   padding-left: 15px
   margin-bottom: 18px
-
-  & li a
-    font-size: 14px
-    line-height: 17px
+  .menu-item
+    @include fonts(400,14px,17px)
     color: $gray
-    font-weight: 400
+    text-decoration: none
+    width: 100%
+    display: block
+    transition: color 1s ease-out
+  .menu-item:hover
+    color: $pink
 
 .filter-menu-heading
   display: block
   position: relative
   cursor: pointer
   color: $gray
-  transition: color .2s ease-out
+  transition: color 1s ease-out
 
   &:hover
     color: $pink
@@ -675,6 +691,7 @@ $gray: #6F6E6E
     width: 46px
     border: 0
     text-align: center
+    transition: all 1s ease-out
 
   &-arrow span
     font-weight: 700
@@ -806,6 +823,237 @@ $gray: #6F6E6E
 
 .add-cart-sl:hover .sl-cart-text::before
   content: url(../img/cart-link.svg)
+
+.carts
+  min-height: 998px
+  padding-top: 56px
+  padding-bottom: 128px
+  box-sizing: border-box
+  .left-cart-block
+    max-width: 57%
+    .cart
+      box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13)
+      height: 306px
+      margin-top: 40px
+      padding: 0
+      border: none
+      cursor: pointer
+      -moz-transition: all 1s
+      -o-transition: all 1s
+      -webkit-transition: all 1s
+      .cart-image
+        height: 100%
+        width: 262px
+      .cart-info
+        position: relative
+        padding: 22px 22px 0 31px
+        height: 100%
+        min-width: 390px
+        .cart-info-heading
+          @include fonts(400,24px,29px)
+          width: 60%
+          margin-bottom: 42px
+        .cart-info-items
+          @include fonts(400,22px,26px)
+          color: #575757
+        .cii-price
+          color: $pink
+        .quantity
+          width: 200px
+          .qua-lable
+            @include fonts(400,22px,26px)
+            color: #575757
+          .qty
+            margin-left: 24px
+            border: 1px solid #EAEAEA
+            width: 43px
+            text-align: center
+            @include fonts(400,18px,22px)
+            color: $gray
+            outline: none
+
+    .cart:hover
+      -webkit-transform: scale(1.02)
+      -moz-transform: scale(1.02)
+      -o-transform: scale(1.02)
+    .clb-bottons
+      margin-top: 72px
+    .clb-botton
+      @include fonts(300,14px,17px)
+      border: 1px solid #A4A4A4
+      text-decoration: none
+      color: $dark
+      padding: 16px 40px
+      background-color: $white
+      transition: all 1s ease-out
+    .clb-botton:hover
+      border: 1px solid $pink
+      color: $pink
+  .right-cart-block
+    max-width: 32%
+    margin-top: 57px
+    .rcb-form
+      width: 100%
+
+      .form-heading
+        float: left
+        @include fonts(300,16px,19px)
+
+      .country
+        margin-top: 20px
+        @include fonts(300,13px,16px)
+        padding: 14px 16px
+        border: 1px solid #A4A4A4
+        width: 100%
+        outline: none
+      .state::placeholder
+        color: $dark
+      .get-button
+        padding: 10px 14px
+        width: 100px
+        color: $gray
+        background-color: $white
+        @include fonts(300,11px,13px)
+        transition: all 1s ease-out
+      .get-button:hover
+        border: 1px solid $pink
+        color: $pink
+    .total
+      margin-top: 57px
+      width: 100%
+      min-height: 214px
+      background-color: #F5F3F3
+      padding: 40px 34px
+      box-sizing: border-box
+      text-align: center
+      h4
+        float: right
+        margin-bottom: 18px
+        @include fonts(400,11px,13px)
+        color: #4A4A4A
+        span
+          margin-left: 25px
+      h3
+        float: right
+        clear: both
+        @include fonts(300,16px,19px)
+        color: $dark
+        margin-bottom: 21px
+        span
+          margin-left: 25px
+          color: $pink
+          font-weight: 700
+      hr
+        margin: 0 auto
+        background: #ccc9c9
+        clear: both
+        margin-bottom: 17px
+      .total-btn
+        color: $white
+        background-color: $pink
+        padding: 15px 42px
+        @include fonts(300,16px,19px)
+        border: none
+        transition: color 0.7s
+        transition: background-color 0.7s
+      .total-btn:hover
+        color: $pink
+        background-color: $white
+
+.registration
+  min-height: 675px
+  padding-top: 64px
+  padding-bottom: 96px
+  box-sizing: border-box
+  .form-block
+    max-width: 32%
+    .form-heading
+      float: left
+      @include fonts(300,16px,19px)
+    .input-place
+      margin-top: 20px
+      @include fonts(300,13px,16px)
+      padding: 14px 16px
+      border: 1px solid #A4A4A4
+      width: 100%
+      outline: none
+    #male-form
+      margin-top: 30px
+      height: 22px
+      width: 22px
+      -webkit-appearance: none
+      -moz-appearance: none
+      appearance: none
+      outline: none
+      position: relative
+    #male-form::before
+      content: ''
+      position: absolute
+      top: 72%
+      left: 30%
+      width: 17px
+      height: 17px
+      border-radius: 50%
+      transform: translate(-50%, -50%)
+      background-color: white
+      border: 1px solid $gray
+    #male-form::before:hover
+      border: 1px solid $pink
+    #male-form:checked::after
+      content: ''
+      position: absolute
+      top: 72%
+      left: 30%
+      width: 10px
+      height: 10px
+      border-radius: 50%
+      background-color: $pink
+      transform: translate(-50%, -50%)
+      visibility: visible
+
+    .mf-lable
+      cursor: pointer
+      @include fonts(300,11px,13px)
+      color: $dark
+      margin-right: 20px
+    .pass-desc
+      margin-top: 15px
+      width: 100%
+      min-height: 32px
+      @include fonts(300,13px,16px)
+      color: $gray
+      margin-bottom: 40px
+    .send-form
+      color: $white
+      background-color: $pink
+      padding: 15px 42px
+      @include fonts(300,16px,19px)
+      border: 1px solid transparent
+      transition: all 1s ease-out
+
+    .send-form:hover
+      color: $pink
+      border: 1px solid $pink
+      background-color: $white
+
+.right-form-block
+  width: 57%
+  .rfb-heading
+    margin: bottom 22px
+    @include fonts(300,24px,29px)
+  p
+    @include fonts(300,24px,29px)
+    margin: bottom 22px
+
+  ul
+    list-style-type: none
+    padding-left: 0
+  li
+    @include fonts(300,24px,29px)
+    margin-bottom: 16px
+  li:before
+    content: "\2713"
+    margin-right: 22px
 
 .hide
   display: none

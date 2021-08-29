@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+ <link crossorigin='anonymous' href='https://use.fontawesome.com/releases/v5.8.2/css/all.css' integrity='sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay' rel='stylesheet'/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body>
+<header class="header">
+  <div class="d-flex justify-content-between align-items-center container">
+    <div class="d-flex align-items-center">
+      <a href="index.html" class="logo-link">
+        <img width="44" src="img/Logo.svg" alt="Brand-logo" class="logo-image">
+      </a>
+      <form class="form">
+         <a href="#" class="Searh-link">
+        <img width="26" src="img/Search.svg" alt="Searh-icon" class="Searh-icon">
+      </a>
+      </form>
+    </div>
+    <div class="d-flex align-items-center">
+      <details class="Hamburger">
+        <summary class="Humburger-link">
+  <img width="32" src="img/Sandwich.svg" alt="Sandwich icon" class="Sandwich-icon" id="Hlink">
+</summary>
+<div class="menu" id="Hmenu">
+  <span class="close" id="close">&#10006;</span>
+<h3 class="menu-heading">MENU</h3>
+<div class="block-menu">
+<h3 class="menu-names">MAN</h3>
+<ul class="menu-Items">
+  <li class="mt-2"><a class="menu-item" href="Catalog.html">Accessories</a></li>
+  <li class="mt-2"><a class="menu-item" href="Catalog.html">Bags</a></li>
+  <li class="mt-2"><a class="menu-item" href="Catalog.html">Denim</a></li>
+  <li class="mt-2"><a class="menu-item" href="Catalog.html">T-Shirts</a></li>
+</ul>
+</div>
+<div class="block-menu">
+<h3 class="menu-names">WOMAN</h3>
+<ul class="menu-Items">
+  <li class="mt-2"><a class="menu-item" href="Catalog.html">Accessories</a></li>
+  <li class="mt-2"><a class="menu-item" href="Catalog.html">Jackets & Coats</a></li>
+  <li class="mt-2"><a class="menu-item" href="Catalog.html">Polos</a></li>
+  <li class="mt-2"><a class="menu-item" href="Catalog.html">T-Shirts</a></li>
+   <li class="mt-2"><a class="menu-item" href="Catalog.html">Shirts</a></li>
+</ul>
+</div>
+<div class="block-menu">
+<h3 class="menu-names">KIDS</h3>
+<ul class="menu-Items">
+  <li class="mt-2"><a class="menu-item" href="Catalog.html">Accessories</a></li>
+  <li class="mt-2"><a class="menu-item" href="Catalog.html">Jackets & Coats</a></li>
+  <li class="mt-2"><a class="menu-item" href="Catalog.html">Polos</a></li>
+  <li class="mt-2"><a class="menu-item" href="Catalog.html">T-Shirts</a></li>
+   <li class="mt-2"><a class="menu-item" href="Catalog.html">Shirts</a></li>
+   <li class="mt-2"><a class="menu-item" href="Catalog.html">Bags</a></li>
+</ul>
+</div>
+</div>
+      </details>
+<a href="#" class="login-link">
+  <img width="29" src="img/Login.svg" alt="Login icon" class="Login-icon">
+</a>
+<a href="#" class="Cart-link">
+  <div class="Cart">
+  <img width="32" src="img/Cart.svg" alt="" class="Cart-icon">
+  <span class="Cart-items">5</span>
+  </div>
+</a>
+    </div>
+ </div>
+    
+</header>
+  <main>
+    <section class="catalog-first-section">
+      <div class="container d-flex justify-content-between align-irtems-center"> 
+        <div class="new-arrivals">
+        <h2 class="bottom-lable">REGISTRATION</h2>
+        </div>
+      </div>
+    </section>
+<section class="registration"> 
+  <div class="container d-flex justify-content-between">
+       <div class="form-block">
+       <form action="#">
+          <legend class="form-heading">Your Name</legend>
+          <input id="name" placeholder="First Name" autofocus="" required="" pattern="\S+[А-яа-я]" class="input-place">
+              <input id="name" placeholder="Last Name" autofocus="" required="" pattern="\S+[А-яа-я]" class="input-place">
+          <input id="male-form" type="radio" name="male">
+          <label class="mf-lable" for="male-form" >Male</label>
+          <input id="male-form" type="radio" name="male">
+          <label class="mf-lable" for="male-form">Female</label>
+          <legend class="form-heading mt-4">Login details</legend>
+           <input id="Email" placeholder="Email" required="" pattern="\S+@[a-z]+.[a-z]+" class="input-place">
+           <input id="pass" type="password" maxlength="25" size="40" name="password" id="name" placeholder="Password" class="input-place"> 
+           <label for="pass" class="pass-desc">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</label>
+           <input class="send-form" type="submit" value="JOIN NOW  	
+&#8594;">
+       </form>
+       
+    </div>
+
+        <div class="right-form-block">
+       <h3 class="rfb-heading">LOYALTY HAS ITS PERKS</h3>
+       <p>Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
+       <ul>
+         <li>15% off welcome offer</li>
+         <li>Free shipping, returns and exchanges on all orders</li>
+         <li>$10 off a purchase on your birthday</li>
+         <li>Early access to products</li>
+         <li> Exclusive offers & rewards</li>
+       </ul>
+
+        </div>
+
+
+
+
+
+
+
+  </div>
+</section>
+</main>
+    <footer>
+       <div class="top-footer-block">
+         <div class="overlay">
+           <div class="container d-flex justify-content-between footer-top-content">
+           <figure class="left-block">
+          <img width="96" src="img/face.png" alt="fase" class="face">
+            <p class="lb-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
+           </figure>
+           <div class="right-block">
+             <h3>SUBSCRIBE</h3>
+             <h3>FOR OUR NEWLETTER AND PROMOTION</h3>
+             <form action="" class="Email-form">
+               <input class="email" type="text" value="Enter Your Email"  type="text" />
+               <input class="Subscribe"  type="submit" value="Subscribe" /> 
+             </form>
+           </div>
+         </div>
+      </div>
+       </div>
+  
+    <div class="footer-bottom">
+      <div class="container d-flex justify-content-between ">
+        <p class="Rights">&#169; 2021  Brand  All Rights Reserved.</p>
+         <div class="social">
+           <ul class="d-flex justify-content-between">
+             <li class="social-item d-flex"><a href="" class="social-link"><i class="fab fa-facebook-f"></i></a></li>
+             <li class="social-item d-flex"><a href="" class="social-link"><i class="fab fa-instagram"></i></a></li>
+             <li class="social-item d-flex"><a href="" class="social-link"><i class="fab fa-pinterest-p"></i></a></li>
+             <li class="social-item d-flex"><a href="" class="social-link"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+         </div>
+      </div>
+    </div> 
+    </footer> 
+
+
+    
+    <script src="js/script_2.js"></script>
+</body>
+</html>
