@@ -70,6 +70,15 @@
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
 
+.menu .top-menu-links {
+  display: none !important;
+  margin-bottom: 16px;
+}
+
+.menu .top-menu-links .li-tml {
+  margin-left: 0;
+}
+
 .close {
   position: absolute;
   font-weight: 700;
