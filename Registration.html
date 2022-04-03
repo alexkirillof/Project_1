@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product</title>
+  <title>Registration</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
@@ -27,13 +27,12 @@
       </form>
     </div>
     <div class="d-flex align-items-center">
-  <details class="Hamburger">
+      <details class="Hamburger">
         <summary class="Humburger-link">
   <img width="32" src="img/Sandwich.svg" alt="Sandwich icon" class="Sandwich-icon" id="Hlink">
 </summary>
-<div class="menu" id="Hmenu">
-  <span class="close" id="close">&#10006;</span>
-   <div class="top-menu-links d-flex">
+<div class="menu" id="Hmenu"> 
+  <div class="top-menu-links">
     <a href="Registration.html" class="login-link">
   <img src="img/Login_tl.svg" alt="Logo-icon" class="Login-icon li-tml">
 </a>
@@ -44,6 +43,8 @@
   </div>
 </a>
   </div>
+  <span class="close" id="close">&#10006;</span>
+
 <h3 class="menu-heading">MENU</h3>
 <div class="block-menu">
 <h3 class="menu-names">MAN</h3>
@@ -95,123 +96,49 @@
     <section class="catalog-first-section">
       <div class="container d-flex justify-content-between align-irtems-center"> 
         <div class="new-arrivals">
-        <h2 class="bottom-lable">NEW ARRIVALS </h2>
+        <h2 class="bottom-lable">REGISTRATION</h2>
+        </div>
+      </div>
+    </section>
+<section class="registration"> 
+  <div class="container d-flex justify-content-between">
+       <div class="form-block">
+       <form action="#">
+          <legend class="form-heading">Your Name</legend>
+          <input id="name" placeholder="First Name" autofocus="" required="" pattern="\S+[А-яа-я]" class="input-place">
+              <input id="name" placeholder="Last Name" autofocus="" required="" pattern="\S+[А-яа-я]" class="input-place">
+          <input id="male-form" type="radio" name="male">
+          <label class="mf-lable" for="male-form" >Male</label>
+          <input id="male-form" type="radio" name="male">
+          <label class="mf-lable" for="male-form">Female</label>
+          <legend class="form-heading mt-4">Login details</legend>
+           <input id="Email" placeholder="Email" required="" pattern="\S+@[a-z]+.[a-z]+" class="input-place">
+           <input id="pass" type="password" maxlength="25" size="40" name="password" id="name" placeholder="Password" class="input-place"> 
+           <label for="pass" class="pass-desc">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</label>
+           <input class="send-form" type="submit" value="JOIN NOW  	
+&#8594;">
+       </form>
+       
+    </div>
+
+        <div class="right-form-block">
+       <h3 class="rfb-heading">LOYALTY HAS ITS PERKS</h3>
+       <p>Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
+       <ul>
+         <li>15% off welcome offer</li>
+         <li>Free shipping, returns and exchanges on all orders</li>
+         <li>$10 off a purchase on your birthday</li>
+         <li>Early access to products</li>
+         <li> Exclusive offers & rewards</li>
+       </ul>
+
         </div>
 
-        <nav class="d-flex justify-content-between nav">
-          <a href="index.html" class="nav-item">HOME</a>
-          <a href="#" class="nav-item cursor-item"> / MEN</a>
-          <a href="Catalog.html" class="nav-item"> / NEW ARRIVALS</a>
-        </nav>
 
-      </div>
-    </section>
- 
-  <section class="slider-section">
-      <div class="slider"></div>
-         <button class="slider-arrow left">
-                 <span>&#10094;</span>
-         </button>
-          <button class="slider-arrow right">
- 	                <span>&#10095;</span>
-         </button>
-         <div class="slider-info container">
-           <h3>WOMEN COLLECTION</h3>
-           <div class="gorizont-line"></div>
-           <h2>MOSCHINO CHEAP AND CHIC</h2>
-           <p class="slider-info-txt">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals. </p>
-           <span class="price">$561</span>
-           <hr>
-            <div class="slider-filter-nav d-flex justify-content-between">
-            <select name="select" id="format" class="select">
-         <option selected disabled class="sel-opt">CHOOSE COLOR</option>
-         <option value="TREND1">RED</option>
-         <option value="TREND2">BLUE</option>
-         <option value="TREND3">GREEN</option>
-       </select>
-         <select name="select" id="format" class="select">
-         <option selected disabled class="sel-opt">CHOOSE SIZE </option>
-         <option value="XS">XS</option>
-         <option value="S">S</option>
-         <option value="M">M</option>
-         <option value="L">L</option>
-       </select>
-            <select name="select" id="format" class="select">
-         <option selected disabled class="sel-opt">QUANTITY</option>
-         <option value="TREND1">x1</option>
-         <option value="TREND2">x2</option>
-         <option value="TREND3">x3</option>
-       </select>
-            </div>
-            <div class="add-cart-sl">
-           <a href="#" class="add-cart-link-sl"><span class="sl-cart-text cart-text">Add to Cart</span></a>
-         </div>
-         </div>
-
-  </section>
-   <section class="cart-item-section">
-      <div class="third-section-cards tsc-mb container">
-            <div class="item-box">
-           <div class="item">
-             <a class="item-link" href="Product.html">
-                  <img width="360" src="img/ts-img-1.jpg" alt="Card-image" class="ts-Card-img">
-                  <div class="Card-description">
-                  <h4 class="ts-Card-header">ELLERY X M'O CAPSULE</h4>
-                  <p class="Card-description-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                  <span class="card-price">$52.00</span> 
-                  </div>
-             </a>
-              <div class="add-cart">
-               <a href="#" class="add-cart-link">
-                <img width="26" src="img/cart-link.svg" alt="cart-icon"> 
-                <span class="cart-text">Add to Cart</span></a>
-              </div>
-             
-           </div>
-            </div>
-             <div class="item-box">
-           <div class="item">
-             <a class="item-link" href="Product.html">
-                  <img width="360" src="img/ts-img-1.jpg" alt="Card-image" class="ts-Card-img">
-                  <div class="Card-description">
-                  <h4 class="ts-Card-header">ELLERY X M'O CAPSULE</h4>
-                  <p class="Card-description-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                  <span class="card-price">$52.00</span> 
-                  </div>
-             </a>
-              <div class="add-cart">
-               <a href="#" class="add-cart-link">
-                <img width="26" src="img/cart-link.svg" alt="cart-icon"> 
-                <span class="cart-text">Add to Cart</span></a>
-              </div>
-             
-           </div>
-            </div>
-             <div class="item-box">
-             <div class="item">
-             <a class="item-link" href="Product.html">
-                  <img width="360" src="img/ts-img-1.jpg" alt="Card-image" class="ts-Card-img">
-                  <div class="Card-description">
-                  <h4 class="ts-Card-header">ELLERY X M'O CAPSULE</h4>
-                  <p class="Card-description-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                  <span class="card-price">$52.00</span> 
-                  </div>
-             </a>
-              <div class="add-cart">
-               <a href="#" class="add-cart-link">
-                <img width="26" src="img/cart-link.svg" alt="cart-icon"> 
-                <span class="cart-text">Add to Cart</span></a>
-              </div>
-             
-             </div>
-            </div>
-   
-      </div>
-
-    </section>
- 
+  </div>
+</section>
 </main>
-  <footer>
+    <footer>
        <div class="top-footer-block">
          <div class="overlay">
            <div class="container d-flex justify-content-between footer-top-content">
@@ -244,7 +171,8 @@
          </div>
       </div>
     </div> 
-  </footer> 
-   
+    </footer> 
+  
+    <script src="js/script_2.js"></script>
 </body>
 </html>
